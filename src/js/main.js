@@ -42,22 +42,22 @@ const operate = (a, b, callback) => {
 
 // Виклик функції з різними операціями
 console.log(
-  operate(10, 5, function (a, b) {
+  operate(10, 5, (a, b) => {
     return a - b;
   }),
 ); // Віднімання
 console.log(
-  operate(10, 5, function (a, b) {
+  operate(10, 5, (a, b) => {
     return a + b;
   }),
 ); // Додавання
 console.log(
-  operate(10, 5, function (a, b) {
+  operate(10, 5, (a, b) => {
     return a * b;
   }),
 ); // Множення
 console.log(
-  operate(10, 5, function (a, b) {
+  operate(10, 5, (a, b) => {
     return a / b;
   }),
 );
