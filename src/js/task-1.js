@@ -3,6 +3,10 @@
 // Знайти мінімальний елемент масиву.
 // Знайти максимальний елемент масиву.
 // Перепишіть колбек-функції на стрілки
+
+const numbers = [1, 5, 8, 12, 3, 15, 7, 20];
+const words = ["кіт", "собака", "миша", "папуга", "хомяк"];
+
 const processArray = (array, callback) => {
   return callback(array);
 };
@@ -26,6 +30,6 @@ const getMax = (arr) => {
   return Math.max(...arr);
 };
 
-console.log(processArray([1, 2, 3, 4, 5, 6, 7, 5, 4, 3, 2, 9], getSum));
-console.log(processArray([1, 2, 3, 4, 5, 6, 7, 5, 4, 3, 2, 9], getMin));
-console.log(processArray([1, 2, 3, 4, 5, 6, 7, 5, 4, 3, 2, 9], getMax));
+console.log(processArray(numbers, getSum));
+console.log(processArray(words, getMin));
+console.log(processArray(numbers, getMax));

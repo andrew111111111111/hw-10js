@@ -26,6 +26,9 @@ console.log(
 ); // Множення
 console.log(
   operate(10, 5, (a, b) => {
+    if (b === 0) {
+      console.error("на ноль ділити не можна");
+    }
     return a / b;
   }),
 );
